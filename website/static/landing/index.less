@@ -7,7 +7,10 @@ body, html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "lato",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.42857143;
@@ -15,9 +18,25 @@ body {
   background-color: transparent;
 }
 
-.topnav {
+
+.topnav a{
+  color: #f45f96;
   font-size: 18px;
-  color: #444;
+}
+
+.navbar-brand{
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 24px;
+  text-transform: uppercase;
+//  line-height: 20px;
+}
+
+
+.topnav small{
+  color: @cosy-orange;
+  font-size: 15px;
 }
 
 .navbar-brand {
@@ -40,21 +59,19 @@ body {
 
 
 .intro-message > h1 {
+  padding-top: 40px;
   margin: 0;
   text-shadow: 2px 2px 20px rgba(0,0,0,1);
   font-size: 5em;
-  //  font-family: "open-sans";
-  //  font-family: "source-sans-pro";
-  //  font-family: 'Roboto', sans-serif;
-  //  font-style: normal;
-  //  font-weight: 100;
 
-  font-family: "lato",sans-serif;
-  font-style: normal;
-  font-weight: 200;
-
+  .logotype;
   text-transform: uppercase ;
 
+}
+
+.intro-header .img-responsive{
+  margin: 0 auto;
+  width: 150px;
 }
 
 .intro-divider {
@@ -91,7 +108,7 @@ body {
 .section-heading-spacer {
   float: left;
   width: 200px;
-  .underline-text-lg
+  .underline-lg
 }
 
 

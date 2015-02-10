@@ -1,9 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500italic,700,900,900italic);
-.underline-text {
+.logotype {
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+.underline {
   border-bottom: solid 1px #f15f4d;
 }
-.underline-text-lg {
-  border-bottom: solid 5px #f15f4d;
+.underline-lg {
+  border-bottom: solid 5px #187a96;
 }
 .border-frame {
   border: solid 10px #f15f4d;
@@ -17,16 +21,29 @@ html {
   height: 100%;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 200;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.42857143;
   color: dimgray;
   background-color: transparent;
 }
-.topnav {
+.topnav a {
+  color: #f45f96;
   font-size: 18px;
-  color: #444;
+}
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.topnav small {
+  color: #f15f4d;
+  font-size: 15px;
 }
 .navbar-brand {
   color: #f15f4d;
@@ -44,13 +61,18 @@ body {
   padding-bottom: 20%;
 }
 .intro-message > h1 {
+  padding-top: 40px;
   margin: 0;
   text-shadow: 2px 2px 20px #000000;
   font-size: 5em;
-  font-family: "lato", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   text-transform: uppercase ;
+}
+.intro-header .img-responsive {
+  margin: 0 auto;
+  width: 150px;
 }
 .intro-divider {
   width: 400px;
@@ -80,7 +102,7 @@ body {
 .section-heading-spacer {
   float: left;
   width: 200px;
-  border-bottom: solid 5px #f15f4d;
+  border-bottom: solid 5px #187a96;
 }
 footer {
   padding: 50px 0;

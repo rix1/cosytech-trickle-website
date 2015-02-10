@@ -1,26 +1,15 @@
-/*
-  BLUE
-#187a96 - Default/Main blue
-#379fbd - lter
-#1f5166 - lt
-#195166 - dk
-#133d4d - dker
-
-RED/ORANGE
-#f15f4d - Default/Main red
-#f16a4b - lter
-#e4573f - lt
-#d5523a - dk
-#cd4a36 - dker*/
-.logo {
-  border: 5px solid #f15f4d;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500italic,700,900,900italic);
+.underline-text {
+  border-bottom: solid 1px #f15f4d;
 }
-.testbox {
-  background: #076985;
-  width: 20px;
-  height: 20px;
-  border: solid 3px #f15f4d;
-  margin: 0 auto;
+.underline-text-lg {
+  border-bottom: solid 5px #f15f4d;
+}
+.border-frame {
+  border: solid 10px #f15f4d;
+}
+.border-frame-lg {
+  border: solid 15px #f15f4d;
 }
 body,
 html {
@@ -28,7 +17,7 @@ html {
   height: 100%;
 }
 body {
-  font-family: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   line-height: 1.42857143;
@@ -58,9 +47,10 @@ body {
   margin: 0;
   text-shadow: 2px 2px 20px #000000;
   font-size: 5em;
-  font-family: "source-sans-pro";
+  font-family: "lato", sans-serif;
   font-style: normal;
   font-weight: 200;
+  text-transform: uppercase ;
 }
 .intro-divider {
   width: 400px;
@@ -72,12 +62,13 @@ body {
 }
 .content-section-a {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #ecedef;
 }
 .content-section-b {
   padding: 50px 0;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+  background-color: #ffffff;
 }
 .lead {
   font-size: 18px;
@@ -89,7 +80,7 @@ body {
 .section-heading-spacer {
   float: left;
   width: 200px;
-  border-top: 3px solid #e7e7e7;
+  border-bottom: solid 5px #f15f4d;
 }
 footer {
   padding: 50px 0;

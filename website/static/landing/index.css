@@ -10,7 +10,7 @@
   border-bottom: solid 5px #187a96;
 }
 .border-frame {
-  border: solid 10px #f15f4d;
+  border: solid 5px #f15f4d;
 }
 .border-frame-lg {
   border: solid 15px #f15f4d;
@@ -55,7 +55,14 @@ a:visited {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  background: url("../img/home_bg1.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/home_bg1.jpg");
+  background-attachment: fixed;
 }
 .intro-message {
   color: #ffffff;
@@ -107,10 +114,23 @@ a:visited {
   width: 200px;
   border-bottom: solid 5px #187a96;
 }
+.testbox {
+  width: 40px;
+  height: 40px;
+  border: solid 5px #f15f4d;
+  margin: 30px auto 0;
+}
+.testbox a {
+  color: #ffffff;
+  font-size: larger;
+  line-height: 200%;
+  text-decoration: none;
+}
 footer {
   color: #ffffff;
   padding: 50px 0;
   background-color: #005874;
+  background-image: url("../img/footer.jpg");
   -webkit-box-shadow: inset 0px 7px 27px -5px rgba(61, 61, 61, 0.3);
   -moz-box-shadow: inset 0px 7px 27px -5px rgba(61, 61, 61, 0.3);
   box-shadow: inset 0px 7px 27px -5px rgba(61, 61, 61, 0.3);

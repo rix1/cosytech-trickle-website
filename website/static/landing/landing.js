@@ -16,7 +16,6 @@ $(document).ready(function(){
         }
     });
 
-
     // Add animations on hover
     function animatedHover(element, animation){
         element = $(element);

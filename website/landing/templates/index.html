@@ -3,20 +3,28 @@
 
 {% block stylesheets %}
     {{ block.super }}
-    <script src="//use.typekit.net/jol7fhz.js"></script>
+    <script src="//use.typekit.net/bgc0ymq.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 {% endblock %}
 
 {% block wrapper %}
 
     <!-- Header -->
-    <div class="intro-header">
+    <div class="intro-header" id="top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="intro-message">
+                    <div class="intro-message col-lg-10 col-lg-offset-1">
+                        <div class="row" id="top">
+                            <img class="animated fadeInLeft logo img-responsive" src="{% static "img/trickle-logo-circle.png" %}" alt="Trickle logo"/>
+                        </div>
                         <h1 class="animated fadeInDown">Trickle</h1>
-                        <h3 class="animated fadeInUp">With a physical app anything can happen</h3>
+                        <h3 class="animated fadeInUp">We revolutionize the way you use your mobile phones by socially integrating rewards in the physical world whilst creating new means of communications for businesses. Everybody wins.</h3>
+                        <div class="testbox animated fadeInUp">
+                            <a id="downArrow" class="" href="#how">
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -27,19 +35,19 @@
     <!-- /.intro-header -->
 
 
-        <div class="content-section-a">
+    <div class="content-section-a" id="first-section">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">A fully featured <br/> customer experience</h2>
                     <p class="lead">Get customers involved with your brand by utilizing proximity technology for context aware information. The future is here.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="{% static "img/trickle.png" %}" alt="">
+                    <img class="img-responsive hidden-xs" id="firstImage" src="{% static "img/trickle.png" %}" alt="">
                 </div>
             </div>
 
@@ -55,14 +63,14 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-offset-0 col-sm-6 col-xs-10 col-xs-offset-1">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Collect YP and <br/>and get rewards</h2>
+                    <h2 class="section-heading" id="how">How?</h2>
                     <p class="lead">You collect points by finding and tagging Trickle's around town. Run around and collect points to earn rewards you can spend on all sorts of stuff.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="{% static "img/trickle.png" %}" alt="">
+                    <img class="img-responsive hidden-xs" id="secondImage" src="{% static "img/trickle.png" %}" alt="">
                 </div>
             </div>
 
@@ -72,26 +80,117 @@
     </div>
     <!-- /.content-section-b -->
 
-        <!-- Footer -->
-    <footer>
+
+    <div class="content-section-a" id="first-section">
+
         <div class="container">
+
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Collect YP and <br/>and get rewards</h2>
+                    <p class="lead">Get customers involved with your brand by utilizing proximity technology for context aware information. The future is here.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive hidden-xs" id="firstImage" src="{% static "img/trickle.png" %}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-offset-0 col-sm-6 col-xs-10 col-xs-offset-1">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Collect YP and <br/>and get rewards</h2>
+                    <p class="lead">You collect points by finding and tagging Trickle's around town. Run around and collect points to earn rewards you can spend on all sorts of stuff.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive hidden-xs" id="secondImage" src="{% static "img/trickle.png" %}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+<div class="content-section-a" id="first-section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" id="why">Why?</h2>
+                    <p class="lead">Get customers involved with your brand by utilizing proximity technology for context aware information. The future is here.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive hidden-xs" id="firstImage" src="{% static "img/trickle.png" %}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-offset-0 col-sm-6 col-xs-10 col-xs-offset-1">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Collect YP and <br/>and get rewards</h2>
+                    <p class="lead">You collect points by finding and tagging Trickle's around town. Run around and collect points to earn rewards you can spend on all sorts of stuff.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive hidden-xs" id="secondImage" src="{% static "img/trickle.png" %}" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" id="bottom">
+            <div class="row">
+                <div class="col-lg-12 text-center">
                     <ul class="list-inline">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#top">Home</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#how">How</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#why">Why</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#bottom">Contact</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; CosyTech {% now "Y" %}. All Rights Reserved</p>

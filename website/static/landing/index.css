@@ -1,7 +1,9 @@
 .logotype {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "lato", sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
+  letter-spacing: 30px;
+  text-transform: uppercase ;
 }
 .underline {
   border-bottom: solid 1px #f15f4d;
@@ -73,16 +75,18 @@ a:visited {
 .intro-message > h1 {
   padding-top: 40px;
   margin: 0;
-  text-shadow: 2px 2px 20px #000000;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
   font-size: 5em;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "lato", sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
+  letter-spacing: 30px;
   text-transform: uppercase ;
+  font-size: 2em;
 }
 .intro-header .img-responsive {
   margin: 0 auto;
-  width: 150px;
+  width: 250px;
 }
 .intro-divider {
   width: 400px;
